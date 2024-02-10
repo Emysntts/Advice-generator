@@ -1,0 +1,17 @@
+@media (max-width: 767px){
+    main{
+        width: 380px;
+        position: fixed;
+        height: 300px;
+    }
+    button{
+        position: fixed;
+        bottom: 120px;
+        padding: 20px;
+    }
+    #play{
+        position: fixed;
+        bottom: 230px;
+        width: 360px;
+    }
+}
