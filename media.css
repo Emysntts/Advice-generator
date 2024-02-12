@@ -1,17 +1,29 @@
 @media (max-width: 767px){
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+
+    }
     main{
+        flex-direction: column;
         width: 380px;
-        position: fixed;
         height: 300px;
     }
-    button{
-        position: fixed;
-        bottom: 120px;
-        padding: 20px;
-    }
     #play{
-        position: fixed;
-        bottom: 230px;
-        width: 360px;
+        position: absolute;
+        bottom: 9vh;
+        width: 50vh;
+    }
+    button{
+        z-index: 1;
+        position: absolute;
+        bottom: -4vh; 
+        left: 50%; 
+        transform: translateX(-50%);
+        padding: 23px;
     }
 }
