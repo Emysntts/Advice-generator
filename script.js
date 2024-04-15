@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const adviceTextElement = document.getElementById('adviceText');
     const generateButton = document.getElementById('gerar');
-    const adviceNumberElement = document.getElementById('Advice'); // Elemento <p> com o ID 'Advice'
+    const adviceNumberElement = document.getElementById('Advice'); 
     const apiUrl = 'https://api.adviceslip.com/advice';
 
     function fetchAdvice() {
@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 const advice = data.slip.advice;
-                const adviceNumber = data.slip.id; // Número do conselho obtido da API
+                const adviceNumber = data.slip.id; 
                 adviceTextElement.textContent = `"${advice}"`;
-                adviceNumberElement.textContent = `ADVICE #${adviceNumber}`; // Atualiza o texto com o número do conselho
+                adviceNumberElement.textContent = `ADVICE #${adviceNumber}`; 
             })
             .catch(error => console.error('Erro ao obter conselho:', error));
     }
