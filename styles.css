@@ -47,11 +47,11 @@ button{
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 15px;
+    padding: 17px;
     background-color: hsl(150, 100%, 66%);
     border-radius: 50px;
     border: none;
-    bottom: 170px;
+    bottom: 197px;
 }
 
 button:hover {
@@ -63,6 +63,6 @@ button:hover {
     position: fixed;
     display: block;
     width: 420px;
-    bottom: 260px;
+    bottom: 280px;
 }
 
